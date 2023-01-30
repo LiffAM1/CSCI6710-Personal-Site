@@ -1,0 +1,90 @@
+.color-primary-0 { color: #F6A2AC }	/* Main Primary color */
+.color-primary-1 { color: #FBD9DD }
+.color-primary-2 { color: #F9BFC6 }
+.color-primary-3 { color: #E37A87 }
+.color-primary-4 { color: #C65260 }
+
+.color-secondary-1-0 { color: #C783B2 }	/* Main Secondary color (1) */
+.color-secondary-1-1 { color: #E8C9DE }
+.color-secondary-1-2 { color: #D8A6C9 }
+.color-secondary-1-3 { color: #B3609A }
+.color-secondary-1-4 { color: #9C4181 }
+
+.color-secondary-2-0 { color: #FFCBA8 }	/* Main Secondary color (2) */
+.color-secondary-2-1 { color: #FFEBDD }
+.color-secondary-2-2 { color: #FFDCC4 }
+.color-secondary-2-3 { color: #ECAC80 }
+.color-secondary-2-4 { color: #CF8756 }
+
+.color-black { color: #2e282aff }
+
+#menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /*if we have too many things, we do not want to have scroll bar. Check the following example*/
+    /*https://www.w3schools.com/cssref/tryit.asp?filename=trycss_overflow*/
+    /*Adding overflow: hidden; triggers a new block formatting context that prevents .navBar from "collapsing" when it has floated children.*/
+    overflow: hidden;
+    background-color: #B3609A;
+}
+
+#menu li {
+    /*without this, your navigation bar will be vertical*/
+    float: left;
+}
+
+#menu li a {
+    /*display: block Takes up the full width available, with a new line before and after (display:block;)*/
+    /*display: inline Takes up only as much width as it needs, and does not force new lines (display:inline;)*/
+    display: block;
+    color: #E8C9DE;
+    /*text-align: center;*/
+    /*14px up and down, 16 px left and right*/
+    padding: 14px 16px;
+    /*default style includes an ugly underline*/
+    text-decoration: none;
+}
+
+#menu a:hover {
+    background-color: #E8C9DE;
+    color: #B3609A;
+}
+
+#header {
+    font-family: verdana;
+}
+#header div {
+    background-color: #E37A87;
+}
+
+#header h1 {
+    color: #FBD9DD;
+    padding: 1%;
+}
+
+#content {
+    background-color: white;
+    font-family: verdana;
+    color: #2e282aff;
+    max-width: 1200px;
+}
+
+#footer {
+    color: #ECAC80;
+    background: #ffebdd;
+    font-family: verdana;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+#footer a {
+  color: #CF8756;
+  background: transparent;
+}
+
+#footer a:hover {
+  color: #ffedbb;
+  background: #CF8756;
+}
